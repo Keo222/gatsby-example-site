@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import {StaticImage} from 'gatsby-plugin-image'
+
+// COMPONENTS
 import Layout from '../components/Layout';
 
 function IndexPage() {
   return (
     <Layout pageTitle="Home Page">
-      <p>I'm making this by following th Gatsby tutorial.</p>
+      <p>I'm making this by following the Gatsby tutorial.</p>
+      <StaticImage 
+        alt="forest"
+        src={'../images/trees.jpg'}
+      />
     </Layout>
   )
 }
